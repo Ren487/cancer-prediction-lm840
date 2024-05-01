@@ -5,6 +5,10 @@ description = "model to predict cancerour tumours"
 authors = ["Lauren Moon <113121065+Ren487@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
+packages = [{include = "cancer_prediction"}]
+
+[tool.poetry.scripts]
+cancer-prediction =  "cancer_prediction.cli:app"
 
 [tool.poetry.dependencies]
 python = "^3.10"
